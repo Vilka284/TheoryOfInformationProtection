@@ -11,7 +11,7 @@ public class Random {
         int[] result = new int[sequenceLength];
         result[0] = (int) START;
         for (int i = 1; i < sequenceLength; i++) {
-            result[i] = (int) (((MULTIPLIER * result[i-1]) + INCREMENT) % MODULE);
+            result[i] = (int) (((MULTIPLIER * result[i - 1]) + INCREMENT) % MODULE);
         }
         return result;
     }
@@ -20,7 +20,7 @@ public class Random {
         int[] result = new int[sequenceLength];
         result[0] = (int) START;
         for (int i = 1; i < sequenceLength; i++) {
-            result[i] = (int) ((MULTIPLIER * result[i-1] + INCREMENT) % MODULE + (System.currentTimeMillis() % MODULE));
+            result[i] = (int) ((MULTIPLIER * result[i - 1] + INCREMENT) % MODULE + (System.currentTimeMillis() % MODULE));
         }
         return result;
     }

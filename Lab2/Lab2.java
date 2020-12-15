@@ -40,8 +40,8 @@ public class Lab2 {
             path = in.nextLine();
 
             System.out.println(result.equals(reader.readLines(path).get(0))
-                                ? ConsoleColors.GREEN_BOLD + "TRUE" + ConsoleColors.RESET
-                                : ConsoleColors.RED_BOLD + "FALSE" + ConsoleColors.RESET);
+                    ? ConsoleColors.GREEN_BOLD + "TRUE" + ConsoleColors.RESET
+                    : ConsoleColors.RED_BOLD + "FALSE" + ConsoleColors.RESET);
             exit("\n", 0);
         } else exit("Unknown action", -1);
 

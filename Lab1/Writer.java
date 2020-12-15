@@ -2,7 +2,6 @@ package com.andrii.Lab1;
 
 import com.andrii.color.ConsoleColors;
 
-import java.io.*;
 import java.util.Arrays;
 
 public class Writer {

@@ -2,11 +2,8 @@ package com.andrii;
 
 import com.andrii.RC5.RC5;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.Arrays;
 
 public class App {
     private JFrame mainFrame;
@@ -70,7 +67,7 @@ public class App {
         String[] arr = rawFileString.split(", ");
         // change first and last symbol of read data
         arr[0] = arr[0].split("\\[")[1];
-        arr[arr.length-1] = arr[arr.length-1].split("\\]")[0];
+        arr[arr.length - 1] = arr[arr.length - 1].split("\\]")[0];
         byte[] byteArray = new byte[arr.length];
         for (int i = 0; i < arr.length; i++) {
             byteArray[i] = Byte.parseByte(arr[i]);
